@@ -1,0 +1,110 @@
+{
+  "strategy": "HeadingChunker",
+  "embedding": "MockEmbedder",
+  "n_docs": 10,
+  "n_chunks": 92,
+  "queries": [
+    {
+      "id": "Q1",
+      "gold_doc": "quy-dinh-chung-tra-hang-hoan-tien",
+      "needs_filter": null,
+      "no_filter": {
+        "top3": [
+          "quy-trinh-shopee-xu-ly-yeu-cau",
+          "tra-hang-do-doi-y",
+          "quan-ly-don-tra-hang-nguoi-ban"
+        ],
+        "score": 0
+      },
+      "with_filter": null
+    },
+    {
+      "id": "Q2",
+      "gold_doc": "quy-dinh-chung-tra-hang-hoan-tien",
+      "needs_filter": null,
+      "no_filter": {
+        "top3": [
+          "chinh-sach-tra-hang-hoan-tien",
+          "chinh-sach-tra-hang-hoan-tien",
+          "quan-ly-don-tra-hang-nguoi-ban"
+        ],
+        "score": 0
+      },
+      "with_filter": null
+    },
+    {
+      "id": "Q3",
+      "gold_doc": "quy-dinh-chung-tra-hang-hoan-tien",
+      "needs_filter": null,
+      "no_filter": {
+        "top3": [
+          "tra-hang-do-doi-y",
+          "tra-hang-do-doi-y",
+          "chinh-sach-tra-hang-hoan-tien"
+        ],
+        "score": 0
+      },
+      "with_filter": null
+    },
+    {
+      "id": "Q4",
+      "gold_doc": "thoi-gian-nhan-tien-hoan",
+      "needs_filter": null,
+      "no_filter": {
+        "top3": [
+          "chinh-sach-tra-hang-hoan-tien",
+          "chinh-sach-tra-hang-hoan-tien",
+          "quan-ly-don-tra-hang-nguoi-ban"
+        ],
+        "score": 0
+      },
+      "with_filter": null
+    },
+    {
+      "id": "Q5",
+      "gold_doc": "quan-ly-don-tra-hang-nguoi-ban",
+      "needs_filter": {
+        "audience": "seller"
+      },
+      "no_filter": {
+        "top3": [
+          "quy-trinh-shopee-xu-ly-yeu-cau",
+          "quy-dinh-chung-tra-hang-hoan-tien",
+          "chinh-sach-tra-hang-hoan-tien"
+        ],
+        "score": 0
+      },
+      "with_filter": {
+        "top3": [
+          "quan-ly-don-tra-hang-nguoi-ban",
+          "quan-ly-don-tra-hang-nguoi-ban",
+          "quan-ly-don-tra-hang-nguoi-ban"
+        ],
+        "score": 2,
+        "filter": {
+          "audience": "seller"
+        }
+      }
+    }
+  ],
+  "summary": {
+    "no_filter": {
+      "total_points": 0,
+      "per_query": {
+        "Q1": 0,
+        "Q2": 0,
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 0
+      },
+      "max_points": 10
+    },
+    "with_filter": {
+      "total_points": 2,
+      "per_query": {
+        "Q5": 2
+      },
+      "max_points": 2
+    }
+  }
+}

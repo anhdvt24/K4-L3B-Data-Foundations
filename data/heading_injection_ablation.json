@@ -1,0 +1,121 @@
+{
+  "strategy_A": "SentenceChunker(max=3)",
+  "strategy_B": "SentenceChunker(max=3) + heading injection",
+  "embedding": "MockEmbedder",
+  "chunks": {
+    "sentence": 120,
+    "sentence_with_heading": 120
+  },
+  "queries": [
+    {
+      "id": "Q1",
+      "gold_doc": "quy-dinh-chung-tra-hang-hoan-tien",
+      "A": {
+        "top3": [
+          "quy-trinh-shopee-xu-ly-yeu-cau",
+          "chinh-sach-tra-hang-hoan-tien",
+          "huong-dan-gui-yeu-cau-tra-hang"
+        ],
+        "score": 0
+      },
+      "B": {
+        "top3": [
+          "chinh-sach-tra-hang-hoan-tien",
+          "quan-ly-don-tra-hang-nguoi-ban",
+          "chinh-sach-tra-hang-hoan-tien"
+        ],
+        "score": 0
+      },
+      "delta": 0
+    },
+    {
+      "id": "Q2",
+      "gold_doc": "quy-dinh-chung-tra-hang-hoan-tien",
+      "A": {
+        "top3": [
+          "chinh-sach-tra-hang-hoan-tien",
+          "chinh-sach-tra-hang-hoan-tien",
+          "chinh-sach-tra-hang-hoan-tien"
+        ],
+        "score": 0
+      },
+      "B": {
+        "top3": [
+          "chinh-sach-tra-hang-hoan-tien",
+          "phuong-thuc-gui-hang-va-phi-hoan-tra",
+          "chinh-sach-tra-hang-hoan-tien"
+        ],
+        "score": 0
+      },
+      "delta": 0
+    },
+    {
+      "id": "Q3",
+      "gold_doc": "quy-dinh-chung-tra-hang-hoan-tien",
+      "A": {
+        "top3": [
+          "quy-trinh-shopee-xu-ly-yeu-cau",
+          "chinh-sach-tra-hang-hoan-tien",
+          "chinh-sach-tra-hang-hoan-tien"
+        ],
+        "score": 0
+      },
+      "B": {
+        "top3": [
+          "chinh-sach-tra-hang-hoan-tien",
+          "chinh-sach-tra-hang-hoan-tien",
+          "chinh-sach-tra-hang-hoan-tien"
+        ],
+        "score": 0
+      },
+      "delta": 0
+    },
+    {
+      "id": "Q4",
+      "gold_doc": "thoi-gian-nhan-tien-hoan",
+      "A": {
+        "top3": [
+          "quy-trinh-shopee-xu-ly-yeu-cau",
+          "quy-trinh-shopee-xu-ly-yeu-cau",
+          "chinh-sach-bao-hanh-san-pham"
+        ],
+        "score": 0
+      },
+      "B": {
+        "top3": [
+          "chinh-sach-tra-hang-hoan-tien",
+          "quy-dinh-chung-tra-hang-hoan-tien",
+          "quy-trinh-shopee-xu-ly-yeu-cau"
+        ],
+        "score": 0
+      },
+      "delta": 0
+    },
+    {
+      "id": "Q5",
+      "gold_doc": "quan-ly-don-tra-hang-nguoi-ban",
+      "A": {
+        "top3": [
+          "chinh-sach-tra-hang-hoan-tien",
+          "tra-hang-do-doi-y",
+          "huong-dan-gui-yeu-cau-tra-hang"
+        ],
+        "score": 0
+      },
+      "B": {
+        "top3": [
+          "tra-hang-do-doi-y",
+          "tra-hang-do-doi-y",
+          "chinh-sach-tra-hang-hoan-tien"
+        ],
+        "score": 0
+      },
+      "delta": 0
+    }
+  ],
+  "summary": {
+    "A": 0,
+    "B": 0,
+    "delta": 0
+  }
+}
